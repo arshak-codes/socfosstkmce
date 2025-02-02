@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Season Of Commits</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Shapes -->
+  <div class="background-shapes"></div>
+
+  <!-- Preloader -->
+  <div class="loader"></div>
+
+  <!-- Main Landing Page -->
+  <div class="main">
+    <header>
+        <img src="logo.webp" alt="">
+      <h1 class="site-title" onclick="redirectToFosscell()">FossCell</h1>
+    </header>
+
+    <section class="content">
+      <img src="image.png" alt="Landing Page Image" class="landing-image">
+      <button class="cta-btn" onclick="redirectToLdb()">Leaderboard 🏆</button>
+      <button class="cta-btn" onclick="redirectToSoc()">Let's Go️‍ 🔥</button>
+    </section>
+  </div>
+
+  <script>
+    // Remove loader after a delay
+    window.onload = () => {
+      setTimeout(() => {
+        document.querySelector('.loader').style.display = 'none';
+        document.querySelector('.main').style.display = 'block';
+      }, 2000); // Adjust delay if needed
+    };
+
+    // Redirect to fosscell.com when clicking on "Jive"
+    function redirectToFosscell() {
+      window.location.href = "https://fosscell-tkmce.vercel.app/";
+    }
+
+    // Redirect when clicking "Sign up free"
+    function redirectToSoc() {
+      window.location.href = "https://fosscell-beyond-code.vercel.app/";
+    }
+    function redirectToLdb() {
+      window.location.href = "Ldbpage.html";
+    }
+  </script>
+</body>
+</html>
